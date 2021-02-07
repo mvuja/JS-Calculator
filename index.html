@@ -8,49 +8,45 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
 	</head>
 	<body>
-		<div id="container">
-			<div class="container">
-				<div id="calculator">
-					<div id="result">
-						<div id="history">
-							<p id="history-value"></p>
-						</div>
-						<div id="output">
-							<p id="output-value"></p>
-						</div>
-					</div>
-					<div id="keyboard">
-						<button class="operator" id="clear">C</button>
-						<button class="operator" id="backspace">CE</button>
-						<button class="operator" id="%">%</button>
-						<button class="operator" id="/">&#247;</button>
-						<button class="number" id="7">7</button>
-						<button class="number" id="8">8</button>
-						<button class="number" id="9">9</button>
-						<button class="operator" id="*">&times;</button>
-						<button class="number" id="4">4</button>
-						<button class="number" id="5">5</button>
-						<button class="number" id="6">6</button>
-						<button class="operator" id="-">-</button>
-						<button class="number" id="1">1</button>
-						<button class="number" id="2">2</button>
-						<button class="number" id="3">3</button>
-						<button class="operator" id="+">+</button>
-						<button class="empty" id="empty"></button>
-						<button class="number" id="0">0</button>
-						<button class="empty" id="empty"></button>
-						<button class="operator" id="=">=</button>
-					</div>
+
+		<div class="container">
+			<div class="calculator-grid">
+
+				<div class="output">
+					<div data-previous-operand class="previous-operand"></div>
+					<div data-current-operand class="current-operand"></div>
 				</div>
-	
-				<div class="circle1"></div>
-				<div class="circle2"></div>
-				<div class="circle3"></div>
-				<div class="circle4"></div>
+
+				<button data-delete class="operator" >C</button>
+				<button data-all-clear class="operator" >AC</button>
+				<button data-operation class="operator" >%</button>
+				<button data-operation class="operator" >/</button>
+				<button data-number class="number" >7</button>
+				<button data-number class="number" >8</button>
+				<button data-number class="number">9</button>
+				<button data-operation class="operator" >*</button>
+				<button data-number class="number">4</button>
+				<button data-number class="number" >5</button>
+				<button data-number class="number" >6</button>
+				<button data-operation class="operator" >-</button>
+				<button data-number class="number" >1</button>
+				<button data-number class="number" >2</button>
+				<button data-number class="number" >3</button>
+				<button data-operation class="operator" >+</button>
+				<button data-number class="number" >.</button>
+				<button data-number class="number" >0</button>
+				<button class="empty"></button>
+				<button data-equals class="operator" >=</button>
 			</div>
-			
+
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+			<div class="circle4"></div>	
 
 		</div>
+			
+
 		<script src="script.js"></script>
 	</body>
 </html>
